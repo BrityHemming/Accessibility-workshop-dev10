@@ -10,6 +10,7 @@
   }
 /*General Styles*/
 html{
+    /*default browser font sizes are 16px and 62.5% of that makes it so that 1 rem or em === 10px*/
     font-size:62.5%;
 }
 body{
@@ -36,6 +37,9 @@ a{
     text-decoration: none;
     font-family: 'Alice', serif;
     color: #efe9e7;
+}
+a:focus{
+    outline: 3px solid grey;
 }
 section{
     padding:4% 0;
@@ -259,6 +263,10 @@ form fieldset{
 input, select{
     padding:1% 0;
     border: 2px solid #000;
+}
+input:focus, select:focus{
+    outline:3px solid red;
+    border:transparent;
 }
 button{
     margin-top:3%;

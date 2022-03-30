@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Sara and Riley's Wedding</title>
     <!--link to google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,15 @@
 </head>
 <body>
     <header>
-        <div class="container">
+      <!--insert aria-label to let the screen reader know here is where the user would click to open the navigation-->
+        <div class="container" aria-label="Open the navigation">
             <div class="nav-toggle hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-            <nav>
+              <!--aria-hidden=true is for hiding the hamburger icons for screen reader, why? because we have the aria label which tells the screen reader that clicking on the div will open the menu-->
+                  <span aria-hidden=”true”></span>
+                  <span aria-hidden=”true”></span>
+                  <span aria-hidden=”true”></span>
+        </div>
+            <nav aria-label="Main Navigation">
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="wedding.html">Wedding</a></li>

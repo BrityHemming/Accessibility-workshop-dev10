@@ -30,11 +30,56 @@
             <h2>RSVP</h2>
             <p>We hope to celebrate this special day with you. Please let us know if you will be attending at least 1 month in advance.</p>
         </div>
-        
         <form action="">
             <!--Write Your Code here-->
-
-            
+           <fieldset>
+               <legend>Will you be joining us?</legend>
+               <label for="name">Guest Name</label>
+               <input type="text" id="name" name="name" required>
+               <label for="attendence">Will you be in attendence?</label>
+               <select name="attendence" id="attendence" required>
+                   <option value="Empty"></option>
+                   <option value="Accept">Accept</option>
+                   <option value="Decline">Decline</option>
+               </select>
+               <label for="entree">Select your entree</label>
+               <select name="entree" id="entree">
+                   <option value="empty"></option>
+                   <option value="fish">Fish</option>
+                   <option value="beef">Beef</option>
+                   <option value="vegeterian">Vegeterian</option>
+               </select>
+               <label for="email">Your Email</label>
+               <input type="email" id="email" name="email">
+               <label for="address">Your Address</label>
+               <input type="text" id="address" name="address">
+               <label for="city">Your city</label>
+               <input type="text" id="city" name="city">
+               <label for="province">Your province</label>
+               <input type="text" id="province" name="province">
+               <label for="postal-code">Your postal code</label>
+               <!--if we are adding a pattern attribute to limit user input, we also want to add a title to tell the user what the input is expecting.-->
+               <input type="text" id="postal-code" name="postal-code" pattern="[a - z, 0-9, A-Z]" title="Postal code must include letters and numbers without spaces example: M6J3T2" maxlength="6"> 
+           </fieldset>
+           <fieldset>
+               <legend>Guest Information</legend>
+               <label for="guest-attendence">Will you be bringing a plus one?</label>
+               <select name="guest-attendence" id="guest-attendence" required>
+                   <option value="empty"></option>
+                   <option value="yes">Yes</option>
+                   <option value="no">No</option>
+               </select>
+               <label for="guest-name">Name of guest</label>
+               <input type="text" id="guest-name" name="guest-name">
+               <label for="guest-entree">Select your guest's entree</label>
+               <select name="guest-entree" id="guest-entree">
+                   <option value="empty"></option>
+                   <option value="fish">Fish</option>
+                   <option value="beef">Beef</option>
+                   <option value="vegeterian">Vegeterian</option>
+               </select>
+           </fieldset>
+           <button type="submit" aria-label="Complete RSVP">RSVP</button>
         </form>
     </section>
     <footer>
